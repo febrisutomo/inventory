@@ -1,0 +1,7 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^api/users/?$ api.php [NC,L]
+RewriteRule ^api/users/([0-9]+)/?$ api.php?id=$1 [NC,L]
+RewriteRule ^([0-9a-zA-Z]+)/?$ index.php?page=$1 [NC,L]
+RewriteRule ^([0-9a-zA-Z]+)/([0-9]+)$ index.php?page=$1&id=$2 [NC,L]
+
+
